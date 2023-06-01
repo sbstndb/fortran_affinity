@@ -21,8 +21,6 @@ program main
                 end subroutine set_affinity
         end interface
 
-
-
         n = 10
         allocate(array(n))
 
@@ -31,7 +29,6 @@ program main
         end do
 
         call c_function(array, n)
-
         call set_affinity(array, n)
 
 end program main
